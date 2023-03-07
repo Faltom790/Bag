@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Showroom</title>
+    <link rel="shortcut icon" href="/Static/img/arno-senoner-ZT16YkAYueo-unsplash.jpg">
+    <link rel="stylesheet" href="./Static/css/style.css">
+    <link rel="stylesheet" href="./Static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+ 
+ 
+   
+    <script>window.addEventListener("load",function(){window.wpcc.init({"border":"thin","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"transparency":"5","corners":"normal","position":"bottom"})}); </script>
+    
+
+  <script src="jquery.js"></script>
+  <style>
+    body {
+      background-color: #dedede;
+    }
+
+    .cards {
+      box-shadow: 0px 0px 17px -10px rgba(0, 0, 0, 0.75);
+    }
+
+    .cards:hover {
+      cursor: pointer;
+      box-shadow: 20px 20px 100px -50px #000;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+
+
+<body>
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top top-0 py-3">
+        <div class="container-fluid">
+            <a href="index.html"><img src="./Static/img/logo - Copy.png" alt="logo"></a> 
+          <a class="navbar-brand fw-bold fs-4 fst-italic" href="index.html">BagBag</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+             <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+             </li>
+            
+             <li class="nav-item mx-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="gallery.html" role="button" data-bs-trigger="hover focus"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                 Gallery
+              </a>
+              <ul class="dropdown-menu border-0 rounded-0 shadow">
+                 <li><a class="dropdown-item" href="#backpacks">Backpacks</a>
+                 </li>
+                 <li><a class="dropdown-item" href="#travelbags"> Travel Bags</a>
+                 </li>
+                 <li><a class="dropdown-item" href="#collections"> Collection Bags</a>
+                 </li>
+                 <li><a class="dropdown-item" href="#totebags"> Tote Bags</a>
+                 </li>
+                 <li><a class="dropdown-item" href="#shoulderbags"> Shoulder Bags</a>
+                 </li>
+                 <li><a class="dropdown-item" href="#fashionceleb"> Fashionistas</a>
+                 </li>
+              </ul>
+        </li>
+    </div>
+        </div>
+ </nav>
+ <!-- Navbar End -->
+  <div class="container p-5 mt-2 ">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-1"></div>
+      <div class="col-8">
+        <div class="input-group  mt-2">
+          <input type="text" placeholder="Search....." class="form-control" id="inp">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-dark" id="search" style="z-index:0;">Search</button>
+          </div>
+        </div>
+      </div>
+      
+             
+
+          <div class="col-md-3 d-flex justify-content-start">
+            <div class="pt-3 pl-0 pb-0 pr-0">
+              <i class="fas fa-shopping-cart fa-2x ml-md-5"></i>
+            </div>
+            <span class="badge badge-success mt-0 align-self-start" id="cart_item_count" style="margin-left: -25px;margin-top: -5px;">0</span>
+            
+          </div>
+
+
+
+
+
+    </div>
+    <div class="row p-5" id="panel">
+      <h1 class="display-3 text-center text-muted" id="not_find_any_thing"></h1>
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/LOUIS VUITTON.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Louis Vuitton </h5>
+              <div>
+                <span class="text-success">$</span><span class="text-success">2,000</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> Black Louis Vuitton HandBag</p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/chanel2.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Chanel </h5> 
+              <div>
+                <span class="text-success">$</span><span class="text-success">1,120</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> Multi-colored bag</p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/bottega veneta.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Bottega Venetta</h5>
+              <div>
+                <span class="text-success">$</span><span class="text-success">1,500</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> </p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/chanel.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Chanel </h5> 
+              <div>
+                <span class="text-success">$</span><span class="text-success">1,250</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> </p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/Gucci.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Gucci </h5>
+              <div>
+                <span class="text-success">$</span><span class="text-success">2,000</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> Gucci Handbag</p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/christian dior.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title">Christian Dior</h5> 
+              <div>
+                <span class="text-success">$</span><span class="text-success">2,250</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> </p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/saint laurent.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title"> Saint Laurent</h5>
+              <div>
+                <span class="text-success">$</span><span class="text-success">1,900</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> </p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 mt-5">
+        <div class="cards p-2">
+          <img class="card-img-top" src="./Static/img/louis vuitton2.jpg" alt="">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+
+              <h5 class="card-title">Louis vuitton </h5> 
+              <div>
+                <span class="text-success">$</span><span class="text-success">2,120</span>
+              </div>
+            </div>
+            <p class="card-text" style="font-size:14px;"> </p>
+            <div class="d-flex justify-content-between">
+
+              <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+ 
+
+
+
+ 
+ <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+  <div class="col-md-6 col-lg-4 mr-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart" style="position: absolute;z-index: 1;top: 80px;overflow: auto;">
+
+    <div class="d-flex">
+      <div class="col-md-3">
+         <h5>Product</h5>        
+      </div>
+      <div class="col-md-3 d-flex flex-wrap align-content-center">
+        <h5>Title</h5>
+      </div>
+      <div class="col-md-3 d-flex flex-wrap align-content-center">
+        <h5>Qty</h5>
+      </div>
+      <div class="col-md-2 d-flex flex-wrap align-content-center">
+        <h5>Price</h5>
+      </div>
+      <div class="col-md-1"></div>
+      
+    </div>
+
+    <div id="order" style="overflow: auto;height: 250px;">
+      
+    </div>
+    <div id="cart_footer">
+  <a href="https://www.jumia.com.ng/womens-bags/?sort=popularity&tag=Boost"> <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold" style="letter-spacing: 1.2px;font-size: 20px;">
+    Order
+  </div>      </a> 
+    </div>
+    
+  </div>
+   
+ </div>
+
+<script>
+  
+//jquery coding
+
+$(document).ready(function(){
+
+$('#search').click(function(){
+
+  var checker = 0;
+  for (var i = 0; i < 12; i++) {
+    var card = $("div").filter(".col-md-6")[i];
+    var title = $("h5").filter(".card-title")[i].innerText.toUpperCase();
+
+    if (title.indexOf($("#inp").val().toUpperCase()) > -1) {
+      card.style.display = 'block';
+      checker++;
+    }
+    else{
+      card.style.display = 'none';
+    }
+  }
+
+if (checker > 0) {
+$("#not_find_any_thing").text("");
+
+}
+else {
+$("#not_find_any_thing").text("No Result Found").fadeIn();
+}
+
+
+});
+});
+
+
+// this video is part 2 
+
+ // jquery for add to cart
+
+
+$(document).ready(function(){
+
+$("#cart").hide();
+
+$(".fa-shopping-cart").mouseenter(function(){
+$('#cart').show();
+})
+
+$("#cart").mouseleave(function(){
+$("#cart").hide();
+})
+
+
+var cart_item_count = 0;
+$('.cart_btn').click(function(){
+cart_item_count++;
+var img_src = $(this).parents(".card-body").siblings("img").attr("src");
+var titlte = $(this).parents(".d-flex").siblings(".d-flex").find(".card-title").text();
+var price = $(this).parents(".d-flex").siblings(".d-flex").find("span:nth-child(2)").text();
+
+
+var cart_item =  `
+ 
+ <div class=" main d-flex p-3 border border-left-0 border-right-0 border-top-0">
+  <div class="col-md-3 border border-left-0 border-top-0 border-bottom-0">
+  <img src=${img_src} class="w-100" alt=""/>
+  </div>
+
+  <div id="title" class="col-md-3 d-flex flex-wrap align-content-center">
+     <h6 style="font-size:13px;">${titlte}</h6>
+  </div>
+
+  <div class="col-md-3 d-flex flex-wrap align-content-center">
+  <span class="mx-2"> 1 </span>
+  </div>
+
+  <div class="col-md-2 d-flex flex-wrap align-content-center" id="t_price">
+    <h6 class="mt-2 d-flex"><span> $ </span><span class="cart_item_price"> ${price} </span></h6>
+  </div>
+
+  <div class="col-md-1 d-flex flex-wrap align-content-center">
+  <span class="close" style="cursor:pointer;font-size:25px;">&times;</span>
+  </div>
+
+ </div>
+
+`
+ 
+ $("#order").append(cart_item);
+
+ $("#cart_item_count").text(cart_item_count);
+ $(".close").click(function(){
+  $(this).parents(".main").remove();
+
+  item_count();
+ })
+ item_count();
+})
+function item_count(){
+
+var res = $("#order").children().length;
+$("#cart_item_count").text(res);
+}
+
+})
+
+</script>
+
+<script src="./Static/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
